@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "version": "0.1.0",
+    "name": "置き換えサンプル",
+    "description": "置き換えサンプル",
+    "content_scripts": [
+      {
+          "matches": [ "http://*/*", "https://*/*" ],
+          "js": [ "index.js" ]
+      }
+    ],
+    "action": {
+      "default_title": "文字列の置き換え"
+    },
+    "permissions": ["activeTab", "scripting"]
+  }
